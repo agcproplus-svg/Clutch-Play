@@ -1,132 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>NFL Card Tactics 2008 (Fanmade)</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="UTF-8">
+  <title>NFL Card Tactics 2008</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="app-header">
-    <div class="brand">
-      <div class="brand-mark">CT</div>
-      <div class="brand-copy">
-        <h1>NFL Card Tactics — 2008</h1>
-        <p class="sub">A fan-made, Strat‑O‑Matic–style web game</p>
-      </div>
+  <div id="start-screen">
+    <h1>NFL Card Tactics 2008</h1>
+    <label>User Team:</label>
+    <select id="user-team"></select>
+    <label>CPU Team:</label>
+    <select id="cpu-team"></select>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <div id="game-screen" style="display:none;">
+    <div id="scoreboard">
+      <span id="user-score">0</span> - <span id="cpu-score">0</span>
     </div>
-    <nav class="top-actions">
-      <button id="adminBtn" class="pill">Admin</button>
-      <a class="pill ghost" href="README.html" target="_blank">Help</a>
-      <a class="pill ghost" href="LICENSE.html" target="_blank">License</a>
-    </nav>
-  </header>
+    <div id="field">
+      <div id="ball-marker"></div>
+    </div>
+    <div id="play-buttons">
+      <h3 id="play-title">Select a Play</h3>
+      <div id="offense-buttons" class="play-group"></div>
+      <div id="defense-buttons" class="play-group"></div>
+    </div>
+    <div id="log-panel">
+      <h3>Play-by-Play</h3>
+      <div id="log"></div>
+    </div>
+  </div>
 
-  <main class="layout">
-    <aside class="panel">
-      <h2>Setup</h2>
-      <div id="teamSelect"></div>
-      <div class="divider"></div>
-      <h2>Playbook</h2>
-      <div id="playCards" class="card-grid"></div>
-      <div class="hint">Click a play card to run a play.</div>
-    </aside>
-
-    <section class="stage">
-      <div class="scorebar" id="scorebar"></div>
-      <div class="field">
-  <svg id="fieldSvg" viewBox="0 0 1000 240" preserveAspectRatio="xMidYMid meet" style="width:100%;height:220px">
-    <defs>
-      <linearGradient id="turf" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#0b3d1b"/>
-        <stop offset="100%" stop-color="#0a3317"/>
-      </linearGradient>
-    </defs>
-    <rect x="50" y="20" width="900" height="200" rx="10" fill="url(#turf)" stroke="#2e5a3a"/>
-    <!-- Yard lines -->
-    <g id="yardlines">
-    </g>
-    <!-- Ball marker -->
-    <g id="ball">
-      <circle id="ballDot" cx="50" cy="120" r="6" fill="#f59e0b" stroke="#111"/>
-    </g>
-  </svg>
-  <div id="log" class="log"></div>
-</div>
-        <div id="log" class="log"></div>
-      </div>
-      <div class="controls">
-        <button id="newGameBtn" class="cta">New Game</button>
-        <button id="autoBtn" class="ghost">Auto Next</button>
-      </div>
-    </section>
-
-    <aside class="panel right">
-      <h2>Roster</h2>
-      <div id="roster"></div>
-      <div class="divider"></div>
-      <h2>Opponent</h2>
-  <div id="opponentSelect"></div>
-  <div class="divider"></div>
-  <h2>Defense Playbook</h2>
-  <div id="defenseCards" class="card-grid"></div>
-  <div class="hint">Choose a defense when the opponent has the ball.</div>
-    </aside>
-  </main>
-
-  <!-- Admin Modal -->
-  <dialog id="adminModal">
-    <form method="dialog" class="modal">
-      <header>
-        <h3>Admin — Edit Player Cards</h3>
-        <button value="cancel" class="pill ghost">Close</button>
-      </header>
-      <div class="modal-body">
-        <div class="admin-grid">
-          <div>
-            <label>Team</label>
-            <select id="adminTeam"></select>
-          </div>
-          <div>
-            <label>Player</label>
-            <select id="adminPlayer"></select>
-          </div>
-          <div>
-            <label>Position</label>
-            <input id="adminPos" placeholder="QB/RB/WR/TE/S/LB/DL"/>
-          </div>
-          <div>
-            <label>OVR</label>
-            <input type="number" id="adminOvr" min="40" max="99"/>
-          </div>
-          <div>
-            <label>PASS</label>
-            <input type="number" id="adminPass" min="0" max="99"/>
-          </div>
-          <div>
-            <label>RUN</label>
-            <input type="number" id="adminRun" min="0" max="99"/>
-          </div>
-          <div>
-            <label>CATCH</label>
-            <input type="number" id="adminCatch" min="0" max="99"/>
-          </div>
-          <div>
-            <label>DEF</label>
-            <input type="number" id="adminDef" min="0" max="99"/>
-          </div>
-        </div>
-        <div class="admin-actions">
-          <button type="button" id="savePlayer" class="cta">Save Player</button>
-          <button type="button" id="exportData" class="pill">Export JSON</button>
-          <label class="pill ghost file">
-            Import JSON<input type="file" id="importData" accept="application/json"/>
-          </label>
-        </div>
-      </div>
-    </form>
-  </dialog>
-
-  <script src="js/app.js"></script>
+  <script src="assets/js/game.js"></script>
 </body>
 </html>
