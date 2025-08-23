@@ -4,61 +4,61 @@
       "id": "ben_roethlisberger",
       "name": "Ben Roethlisberger",
       "pos": "QB",
-      "ovr": 90,
-      "pass": 90,
-      "run": 40,
+      "ovr": 95,
+      "pass": 100,
+      "run": 30,
       "catch": 20,
       "def": 10
+    },
+    {
+      "id": "willie_parker",
+      "name": "Willie Parker",
+      "pos": "RB",
+      "ovr": 85,
+      "pass": 25,
+      "run": 100,
+      "catch": 75,
+      "def": 20
     },
     {
       "id": "hines_ward",
       "name": "Hines Ward",
       "pos": "WR",
-      "ovr": 88,
-      "pass": 15,
-      "run": 40,
-      "catch": 90,
+      "ovr": 85,
+      "pass": 20,
+      "run": 80,
+      "catch": 100,
       "def": 20
     },
     {
       "id": "santonio_holmes",
       "name": "Santonio Holmes",
       "pos": "WR",
-      "ovr": 86,
-      "pass": 10,
-      "run": 45,
-      "catch": 88,
-      "def": 20
-    },
-    {
-      "id": "willie_parker",
-      "name": "Willie Parker",
-      "pos": "RB",
-      "ovr": 84,
+      "ovr": 80,
       "pass": 20,
-      "run": 90,
-      "catch": 70,
+      "run": 75,
+      "catch": 95,
       "def": 20
     },
     {
       "id": "heath_miller",
       "name": "Heath Miller",
       "pos": "TE",
-      "ovr": 83,
+      "ovr": 80,
       "pass": 20,
-      "run": 65,
-      "catch": 82,
-      "def": 30
+      "run": 75,
+      "catch": 95,
+      "def": 20
     },
     {
-      "id": "troy_polamalu",
-      "name": "Troy Polamalu",
-      "pos": "S",
-      "ovr": 96,
+      "id": "casey_hampton",
+      "name": "Casey Hampton",
+      "pos": "DL",
+      "ovr": 95,
       "pass": 10,
       "run": 40,
-      "catch": 40,
-      "def": 96
+      "catch": 30,
+      "def": 105
     },
     {
       "id": "james_harrison",
@@ -66,9 +66,41 @@
       "pos": "LB",
       "ovr": 95,
       "pass": 10,
-      "run": 45,
+      "run": 40,
       "catch": 30,
-      "def": 95
+      "def": 105
+    },
+    {
+      "id": "troy_polamalu",
+      "name": "Troy Polamalu",
+      "pos": "S",
+      "ovr": 95,
+      "pass": 10,
+      "run": 40,
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "jeff_reed",
+      "name": "Jeff Reed",
+      "pos": "K",
+      "ovr": 80,
+      "pass": 10,
+      "run": 10,
+      "catch": 10,
+      "def": 10,
+      "kick": 95
+    },
+    {
+      "id": "mitch_berger",
+      "name": "Mitch Berger",
+      "pos": "P",
+      "ovr": 80,
+      "pass": 10,
+      "run": 10,
+      "catch": 10,
+      "def": 10,
+      "punt": 95
     }
   ],
   "ARI": [
@@ -76,51 +108,103 @@
       "id": "kurt_warner",
       "name": "Kurt Warner",
       "pos": "QB",
-      "ovr": 92,
-      "pass": 95,
-      "run": 20,
+      "ovr": 95,
+      "pass": 100,
+      "run": 30,
       "catch": 20,
       "def": 10
-    },
-    {
-      "id": "larry_fitzgerald",
-      "name": "Larry Fitzgerald",
-      "pos": "WR",
-      "ovr": 97,
-      "pass": 10,
-      "run": 45,
-      "catch": 99,
-      "def": 25
-    },
-    {
-      "id": "anquan_boldin",
-      "name": "Anquan Boldin",
-      "pos": "WR",
-      "ovr": 94,
-      "pass": 12,
-      "run": 50,
-      "catch": 96,
-      "def": 25
     },
     {
       "id": "edgerrin_james",
       "name": "Edgerrin James",
       "pos": "RB",
-      "ovr": 83,
-      "pass": 18,
-      "run": 85,
-      "catch": 72,
+      "ovr": 85,
+      "pass": 25,
+      "run": 100,
+      "catch": 75,
+      "def": 20
+    },
+    {
+      "id": "larry_fitzgerald",
+      "name": "Larry Fitzgerald",
+      "pos": "WR",
+      "ovr": 85,
+      "pass": 20,
+      "run": 80,
+      "catch": 100,
+      "def": 20
+    },
+    {
+      "id": "anquan_boldin",
+      "name": "Anquan Boldin",
+      "pos": "WR",
+      "ovr": 80,
+      "pass": 20,
+      "run": 75,
+      "catch": 95,
+      "def": 20
+    },
+    {
+      "id": "leonard_pope",
+      "name": "Leonard Pope",
+      "pos": "TE",
+      "ovr": 80,
+      "pass": 20,
+      "run": 75,
+      "catch": 95,
       "def": 20
     },
     {
       "id": "darnell_dockett",
       "name": "Darnell Dockett",
       "pos": "DL",
-      "ovr": 90,
+      "ovr": 95,
       "pass": 10,
       "run": 40,
-      "catch": 20,
-      "def": 92
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "karlos_dansby",
+      "name": "Karlos Dansby",
+      "pos": "LB",
+      "ovr": 95,
+      "pass": 10,
+      "run": 40,
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "adrian_wilson",
+      "name": "Adrian Wilson",
+      "pos": "S",
+      "ovr": 95,
+      "pass": 10,
+      "run": 40,
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "neil_rackers",
+      "name": "Neil Rackers",
+      "pos": "K",
+      "ovr": 80,
+      "pass": 10,
+      "run": 10,
+      "catch": 10,
+      "def": 10,
+      "kick": 95
+    },
+    {
+      "id": "ben_graham",
+      "name": "Ben Graham",
+      "pos": "P",
+      "ovr": 80,
+      "pass": 10,
+      "run": 10,
+      "catch": 10,
+      "def": 10,
+      "punt": 95
     }
   ],
   "NE": [
@@ -128,51 +212,103 @@
       "id": "tom_brady",
       "name": "Tom Brady",
       "pos": "QB",
-      "ovr": 99,
-      "pass": 99,
-      "run": 25,
+      "ovr": 95,
+      "pass": 100,
+      "run": 30,
       "catch": 20,
       "def": 10
+    },
+    {
+      "id": "laurence_maroney",
+      "name": "Laurence Maroney",
+      "pos": "RB",
+      "ovr": 85,
+      "pass": 25,
+      "run": 100,
+      "catch": 75,
+      "def": 20
     },
     {
       "id": "randy_moss",
       "name": "Randy Moss",
       "pos": "WR",
-      "ovr": 98,
-      "pass": 15,
-      "run": 50,
-      "catch": 99,
+      "ovr": 85,
+      "pass": 20,
+      "run": 80,
+      "catch": 100,
       "def": 20
     },
     {
       "id": "wes_welker",
       "name": "Wes Welker",
       "pos": "WR",
-      "ovr": 94,
-      "pass": 18,
-      "run": 55,
-      "catch": 97,
+      "ovr": 80,
+      "pass": 20,
+      "run": 75,
+      "catch": 95,
       "def": 20
     },
     {
-      "id": "laurence_maroney",
-      "name": "Laurence Maroney",
-      "pos": "RB",
-      "ovr": 82,
+      "id": "benjamin_watson",
+      "name": "Benjamin Watson",
+      "pos": "TE",
+      "ovr": 80,
       "pass": 20,
-      "run": 84,
-      "catch": 70,
+      "run": 75,
+      "catch": 95,
       "def": 20
     },
     {
       "id": "vince_wilfork",
       "name": "Vince Wilfork",
       "pos": "DL",
-      "ovr": 93,
+      "ovr": 95,
       "pass": 10,
-      "run": 45,
-      "catch": 20,
-      "def": 94
+      "run": 40,
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "tedy_bruschi",
+      "name": "Tedy Bruschi",
+      "pos": "LB",
+      "ovr": 95,
+      "pass": 10,
+      "run": 40,
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "rodney_harrison",
+      "name": "Rodney Harrison",
+      "pos": "S",
+      "ovr": 95,
+      "pass": 10,
+      "run": 40,
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "stephen_gostkowski",
+      "name": "Stephen Gostkowski",
+      "pos": "K",
+      "ovr": 80,
+      "pass": 10,
+      "run": 10,
+      "catch": 10,
+      "def": 10,
+      "kick": 95
+    },
+    {
+      "id": "chris_hanson",
+      "name": "Chris Hanson",
+      "pos": "P",
+      "ovr": 80,
+      "pass": 10,
+      "run": 10,
+      "catch": 10,
+      "def": 10,
+      "punt": 95
     }
   ],
   "NYG": [
@@ -180,8 +316,8 @@
       "id": "eli_manning",
       "name": "Eli Manning",
       "pos": "QB",
-      "ovr": 88,
-      "pass": 90,
+      "ovr": 95,
+      "pass": 100,
       "run": 30,
       "catch": 20,
       "def": 10
@@ -190,41 +326,93 @@
       "id": "brandon_jacobs",
       "name": "Brandon Jacobs",
       "pos": "RB",
-      "ovr": 86,
-      "pass": 18,
-      "run": 92,
-      "catch": 65,
-      "def": 20
-    },
-    {
-      "id": "steve_smith",
-      "name": "Steve Smith",
-      "pos": "WR",
-      "ovr": 86,
-      "pass": 12,
-      "run": 50,
-      "catch": 90,
+      "ovr": 85,
+      "pass": 25,
+      "run": 100,
+      "catch": 75,
       "def": 20
     },
     {
       "id": "plaxico_burress",
       "name": "Plaxico Burress",
       "pos": "WR",
-      "ovr": 90,
-      "pass": 12,
-      "run": 48,
-      "catch": 92,
+      "ovr": 85,
+      "pass": 20,
+      "run": 80,
+      "catch": 100,
+      "def": 20
+    },
+    {
+      "id": "steve_smith",
+      "name": "Steve Smith",
+      "pos": "WR",
+      "ovr": 80,
+      "pass": 20,
+      "run": 75,
+      "catch": 95,
+      "def": 20
+    },
+    {
+      "id": "kevin_boss",
+      "name": "Kevin Boss",
+      "pos": "TE",
+      "ovr": 80,
+      "pass": 20,
+      "run": 75,
+      "catch": 95,
       "def": 20
     },
     {
       "id": "justin_tuck",
       "name": "Justin Tuck",
       "pos": "DL",
-      "ovr": 92,
+      "ovr": 95,
       "pass": 10,
-      "run": 45,
-      "catch": 20,
-      "def": 93
+      "run": 40,
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "antonio_pierce",
+      "name": "Antonio Pierce",
+      "pos": "LB",
+      "ovr": 95,
+      "pass": 10,
+      "run": 40,
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "kenny_phillips",
+      "name": "Kenny Phillips",
+      "pos": "S",
+      "ovr": 95,
+      "pass": 10,
+      "run": 40,
+      "catch": 30,
+      "def": 105
+    },
+    {
+      "id": "john_carney",
+      "name": "John Carney",
+      "pos": "K",
+      "ovr": 80,
+      "pass": 10,
+      "run": 10,
+      "catch": 10,
+      "def": 10,
+      "kick": 95
+    },
+    {
+      "id": "jeff_feagles",
+      "name": "Jeff Feagles",
+      "pos": "P",
+      "ovr": 80,
+      "pass": 10,
+      "run": 10,
+      "catch": 10,
+      "def": 10,
+      "punt": 95
     }
   ]
 }

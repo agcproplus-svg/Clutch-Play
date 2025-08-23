@@ -13,24 +13,15 @@
 <rect x="0" y="0" width="400" height="560" rx="24" fill="url(#bg)"/>
 <rect x="16" y="16" width="368" height="120" rx="16" fill="rgba(0,0,0,.2)"/>
 <text x="32" y="58" class="title">Troy Polamalu</text>
-<text x="32" y="88" class="label">Pittsburgh · S · OVR 96</text>
-
-<g transform="translate(0,0)">
-  <circle cx="320" cy="76" r="36" fill="rgba(255,255,255,.15)"/>
-  <text x="320" y="82" text-anchor="middle" class="title">PIT</text>
-</g>
-
-<g transform="translate(0,0)">
-  <rect x="16" y="160" width="368" height="180" rx="16" fill="rgba(0,0,0,.18)"/>
-  <text x="200" y="250" text-anchor="middle" class="title" style="font-size:140px">TP</text>
-</g>
-
-<g transform="translate(0,0)">
-  <rect x="16" y="356" width="368" height="188" rx="16" fill="rgba(0,0,0,.18)"/>
-  <text x="32" y="388" class="label">ATTRIBUTES</text>
-  <text x="32" y="420" class="stat">PASS 10</text>
-  <text x="32" y="450" class="stat">RUN 40</text>
-  <text x="200" y="420" class="stat">CATCH 40</text>
-  <text x="200" y="450" class="stat">DEF 96</text>
-</g>
+<text x="32" y="88" class="label">Pittsburgh · S · OVR 95</text>
+<g><circle cx="320" cy="76" r="36" fill="rgba(255,255,255,.15)"/>
+<text x="320" y="82" text-anchor="middle" class="title">PIT</text></g>
+<g><rect x="16" y="160" width="368" height="180" rx="16" fill="rgba(0,0,0,.18)"/>
+<text x="200" y="250" text-anchor="middle" class="title" style="font-size:140px">TP</text></g>
+<g><rect x="16" y="356" width="368" height="188" rx="16" fill="rgba(0,0,0,.18)"/>
+<text x="32" y="388" class="label">ATTRIBUTES</text>
+<text x="32" y="420" class="stat">PASS 10</text>
+<text x="32" y="450" class="stat">RUN 40</text>
+<text x="200" y="420" class="stat">CATCH 30</text>
+<text x="200" y="450" class="stat">DEF 105</text></g>
 </svg>
