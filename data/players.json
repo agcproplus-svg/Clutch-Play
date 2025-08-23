@@ -1,0 +1,230 @@
+{
+  "PIT": [
+    {
+      "id": "ben_roethlisberger",
+      "name": "Ben Roethlisberger",
+      "pos": "QB",
+      "ovr": 90,
+      "pass": 90,
+      "run": 40,
+      "catch": 20,
+      "def": 10
+    },
+    {
+      "id": "hines_ward",
+      "name": "Hines Ward",
+      "pos": "WR",
+      "ovr": 88,
+      "pass": 15,
+      "run": 40,
+      "catch": 90,
+      "def": 20
+    },
+    {
+      "id": "santonio_holmes",
+      "name": "Santonio Holmes",
+      "pos": "WR",
+      "ovr": 86,
+      "pass": 10,
+      "run": 45,
+      "catch": 88,
+      "def": 20
+    },
+    {
+      "id": "willie_parker",
+      "name": "Willie Parker",
+      "pos": "RB",
+      "ovr": 84,
+      "pass": 20,
+      "run": 90,
+      "catch": 70,
+      "def": 20
+    },
+    {
+      "id": "heath_miller",
+      "name": "Heath Miller",
+      "pos": "TE",
+      "ovr": 83,
+      "pass": 20,
+      "run": 65,
+      "catch": 82,
+      "def": 30
+    },
+    {
+      "id": "troy_polamalu",
+      "name": "Troy Polamalu",
+      "pos": "S",
+      "ovr": 96,
+      "pass": 10,
+      "run": 40,
+      "catch": 40,
+      "def": 96
+    },
+    {
+      "id": "james_harrison",
+      "name": "James Harrison",
+      "pos": "LB",
+      "ovr": 95,
+      "pass": 10,
+      "run": 45,
+      "catch": 30,
+      "def": 95
+    }
+  ],
+  "ARI": [
+    {
+      "id": "kurt_warner",
+      "name": "Kurt Warner",
+      "pos": "QB",
+      "ovr": 92,
+      "pass": 95,
+      "run": 20,
+      "catch": 20,
+      "def": 10
+    },
+    {
+      "id": "larry_fitzgerald",
+      "name": "Larry Fitzgerald",
+      "pos": "WR",
+      "ovr": 97,
+      "pass": 10,
+      "run": 45,
+      "catch": 99,
+      "def": 25
+    },
+    {
+      "id": "anquan_boldin",
+      "name": "Anquan Boldin",
+      "pos": "WR",
+      "ovr": 94,
+      "pass": 12,
+      "run": 50,
+      "catch": 96,
+      "def": 25
+    },
+    {
+      "id": "edgerrin_james",
+      "name": "Edgerrin James",
+      "pos": "RB",
+      "ovr": 83,
+      "pass": 18,
+      "run": 85,
+      "catch": 72,
+      "def": 20
+    },
+    {
+      "id": "darnell_dockett",
+      "name": "Darnell Dockett",
+      "pos": "DL",
+      "ovr": 90,
+      "pass": 10,
+      "run": 40,
+      "catch": 20,
+      "def": 92
+    }
+  ],
+  "NE": [
+    {
+      "id": "tom_brady",
+      "name": "Tom Brady",
+      "pos": "QB",
+      "ovr": 99,
+      "pass": 99,
+      "run": 25,
+      "catch": 20,
+      "def": 10
+    },
+    {
+      "id": "randy_moss",
+      "name": "Randy Moss",
+      "pos": "WR",
+      "ovr": 98,
+      "pass": 15,
+      "run": 50,
+      "catch": 99,
+      "def": 20
+    },
+    {
+      "id": "wes_welker",
+      "name": "Wes Welker",
+      "pos": "WR",
+      "ovr": 94,
+      "pass": 18,
+      "run": 55,
+      "catch": 97,
+      "def": 20
+    },
+    {
+      "id": "laurence_maroney",
+      "name": "Laurence Maroney",
+      "pos": "RB",
+      "ovr": 82,
+      "pass": 20,
+      "run": 84,
+      "catch": 70,
+      "def": 20
+    },
+    {
+      "id": "vince_wilfork",
+      "name": "Vince Wilfork",
+      "pos": "DL",
+      "ovr": 93,
+      "pass": 10,
+      "run": 45,
+      "catch": 20,
+      "def": 94
+    }
+  ],
+  "NYG": [
+    {
+      "id": "eli_manning",
+      "name": "Eli Manning",
+      "pos": "QB",
+      "ovr": 88,
+      "pass": 90,
+      "run": 30,
+      "catch": 20,
+      "def": 10
+    },
+    {
+      "id": "brandon_jacobs",
+      "name": "Brandon Jacobs",
+      "pos": "RB",
+      "ovr": 86,
+      "pass": 18,
+      "run": 92,
+      "catch": 65,
+      "def": 20
+    },
+    {
+      "id": "steve_smith",
+      "name": "Steve Smith",
+      "pos": "WR",
+      "ovr": 86,
+      "pass": 12,
+      "run": 50,
+      "catch": 90,
+      "def": 20
+    },
+    {
+      "id": "plaxico_burress",
+      "name": "Plaxico Burress",
+      "pos": "WR",
+      "ovr": 90,
+      "pass": 12,
+      "run": 48,
+      "catch": 92,
+      "def": 20
+    },
+    {
+      "id": "justin_tuck",
+      "name": "Justin Tuck",
+      "pos": "DL",
+      "ovr": 92,
+      "pass": 10,
+      "run": 45,
+      "catch": 20,
+      "def": 93
+    }
+  ]
+}

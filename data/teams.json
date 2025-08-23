@@ -1,0 +1,46 @@
+[
+  {
+    "id": "PIT",
+    "name": "Pittsburgh",
+    "nickname": "Steel",
+    "colors": [
+      "#101820",
+      "#FFB612"
+    ],
+    "off_scheme": "balanced",
+    "def_scheme": "3-4"
+  },
+  {
+    "id": "ARI",
+    "name": "Arizona",
+    "nickname": "Birds",
+    "colors": [
+      "#97233F",
+      "#000000"
+    ],
+    "off_scheme": "pass-heavy",
+    "def_scheme": "4-3"
+  },
+  {
+    "id": "NE",
+    "name": "New England",
+    "nickname": "Patriots",
+    "colors": [
+      "#002244",
+      "#C60C30"
+    ],
+    "off_scheme": "balanced",
+    "def_scheme": "3-4"
+  },
+  {
+    "id": "NYG",
+    "name": "New York",
+    "nickname": "Giants",
+    "colors": [
+      "#0B2265",
+      "#A71930"
+    ],
+    "off_scheme": "run-heavy",
+    "def_scheme": "4-3"
+  }
+]

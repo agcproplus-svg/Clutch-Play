@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>NFL Card Tactics 2008 (Fanmade)</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-mark">CT</div>
+      <div class="brand-copy">
+        <h1>NFL Card Tactics — 2008</h1>
+        <p class="sub">A fan-made, Strat‑O‑Matic–style web game</p>
+      </div>
+    </div>
+    <nav class="top-actions">
+      <button id="adminBtn" class="pill">Admin</button>
+      <a class="pill ghost" href="README.html" target="_blank">Help</a>
+      <a class="pill ghost" href="LICENSE.html" target="_blank">License</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <aside class="panel">
+      <h2>Setup</h2>
+      <div id="teamSelect"></div>
+      <div class="divider"></div>
+      <h2>Playbook</h2>
+      <div id="playCards" class="card-grid"></div>
+      <div class="hint">Click a play card to run a play.</div>
+    </aside>
+
+    <section class="stage">
+      <div class="scorebar" id="scorebar"></div>
+      <div class="field">
+        <div id="log" class="log"></div>
+      </div>
+      <div class="controls">
+        <button id="newGameBtn" class="cta">New Game</button>
+        <button id="autoBtn" class="ghost">Auto Next</button>
+      </div>
+    </section>
+
+    <aside class="panel right">
+      <h2>Roster</h2>
+      <div id="roster"></div>
+      <div class="divider"></div>
+      <h2>Opponent</h2>
+      <div id="opponentSelect"></div>
+    </aside>
+  </main>
+
+  <!-- Admin Modal -->
+  <dialog id="adminModal">
+    <form method="dialog" class="modal">
+      <header>
+        <h3>Admin — Edit Player Cards</h3>
+        <button value="cancel" class="pill ghost">Close</button>
+      </header>
+      <div class="modal-body">
+        <div class="admin-grid">
+          <div>
+            <label>Team</label>
+            <select id="adminTeam"></select>
+          </div>
+          <div>
+            <label>Player</label>
+            <select id="adminPlayer"></select>
+          </div>
+          <div>
+            <label>Position</label>
+            <input id="adminPos" placeholder="QB/RB/WR/TE/S/LB/DL"/>
+          </div>
+          <div>
+            <label>OVR</label>
+            <input type="number" id="adminOvr" min="40" max="99"/>
+          </div>
+          <div>
+            <label>PASS</label>
+            <input type="number" id="adminPass" min="0" max="99"/>
+          </div>
+          <div>
+            <label>RUN</label>
+            <input type="number" id="adminRun" min="0" max="99"/>
+          </div>
+          <div>
+            <label>CATCH</label>
+            <input type="number" id="adminCatch" min="0" max="99"/>
+          </div>
+          <div>
+            <label>DEF</label>
+            <input type="number" id="adminDef" min="0" max="99"/>
+          </div>
+        </div>
+        <div class="admin-actions">
+          <button type="button" id="savePlayer" class="cta">Save Player</button>
+          <button type="button" id="exportData" class="pill">Export JSON</button>
+          <label class="pill ghost file">
+            Import JSON<input type="file" id="importData" accept="application/json"/>
+          </label>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
