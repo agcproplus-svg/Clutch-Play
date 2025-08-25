@@ -1,0 +1,579 @@
+[
+  {
+    "id": "NYG-QB",
+    "name": "NYG QB (2008)",
+    "position": "QB",
+    "teamId": "NYG",
+    "year": 2008,
+    "tables": {
+      "insideRun": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "gain:-2"
+        },
+        {
+          "min": 7,
+          "max": 10,
+          "result": "gain:0"
+        },
+        {
+          "min": 11,
+          "max": 14,
+          "result": "gain:3"
+        },
+        {
+          "min": 15,
+          "max": 17,
+          "result": "gain:6"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "outsideRun": [
+        {
+          "min": 3,
+          "max": 7,
+          "result": "gain:-3"
+        },
+        {
+          "min": 8,
+          "max": 11,
+          "result": "gain:0"
+        },
+        {
+          "min": 12,
+          "max": 15,
+          "result": "gain:4"
+        },
+        {
+          "min": 16,
+          "max": 17,
+          "result": "gain:8"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "shortPass": [
+        {
+          "min": 3,
+          "max": 5,
+          "result": "INT"
+        },
+        {
+          "min": 6,
+          "max": 8,
+          "result": "INC"
+        },
+        {
+          "min": 9,
+          "max": 12,
+          "result": "gain:6"
+        },
+        {
+          "min": 13,
+          "max": 16,
+          "result": "gain:12"
+        },
+        {
+          "min": 17,
+          "max": 17,
+          "result": "gain:20"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "longPass": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "SACK:-8"
+        },
+        {
+          "min": 7,
+          "max": 10,
+          "result": "INC"
+        },
+        {
+          "min": 11,
+          "max": 14,
+          "result": "gain:18"
+        },
+        {
+          "min": 15,
+          "max": 17,
+          "result": "gain:32"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "qbScramble": [
+        {
+          "min": 3,
+          "max": 8,
+          "result": "gain:2"
+        },
+        {
+          "min": 9,
+          "max": 12,
+          "result": "gain:5"
+        },
+        {
+          "min": 13,
+          "max": 16,
+          "result": "gain:10"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "gain:15"
+        }
+      ],
+      "fieldGoal": [
+        {
+          "min": 3,
+          "max": 10,
+          "result": "gain:0"
+        },
+        {
+          "min": 11,
+          "max": 18,
+          "result": "gain:3"
+        }
+      ],
+      "punt": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "gain:35"
+        },
+        {
+          "min": 7,
+          "max": 12,
+          "result": "gain:42"
+        },
+        {
+          "min": 13,
+          "max": 18,
+          "result": "gain:50"
+        }
+      ]
+    }
+  },
+  {
+    "id": "NYG-RB",
+    "name": "NYG RB (2008)",
+    "position": "RB",
+    "teamId": "NYG",
+    "year": 2008,
+    "tables": {
+      "insideRun": [
+        {
+          "min": 3,
+          "max": 5,
+          "result": "gain:-1"
+        },
+        {
+          "min": 6,
+          "max": 9,
+          "result": "gain:2"
+        },
+        {
+          "min": 10,
+          "max": 13,
+          "result": "gain:4"
+        },
+        {
+          "min": 14,
+          "max": 16,
+          "result": "gain:7"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "outsideRun": [
+        {
+          "min": 3,
+          "max": 5,
+          "result": "gain:-2"
+        },
+        {
+          "min": 6,
+          "max": 9,
+          "result": "gain:1"
+        },
+        {
+          "min": 10,
+          "max": 13,
+          "result": "gain:6"
+        },
+        {
+          "min": 14,
+          "max": 16,
+          "result": "gain:9"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "shortPass": [
+        {
+          "min": 3,
+          "max": 7,
+          "result": "INC"
+        },
+        {
+          "min": 8,
+          "max": 12,
+          "result": "gain:5"
+        },
+        {
+          "min": 13,
+          "max": 16,
+          "result": "gain:11"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "gain:25"
+        }
+      ],
+      "longPass": [
+        {
+          "min": 3,
+          "max": 10,
+          "result": "INC"
+        },
+        {
+          "min": 11,
+          "max": 14,
+          "result": "gain:15"
+        },
+        {
+          "min": 15,
+          "max": 17,
+          "result": "gain:28"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "qbScramble": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ],
+      "fieldGoal": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ],
+      "punt": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ]
+    }
+  },
+  {
+    "id": "DAL-QB",
+    "name": "DAL QB (2008)",
+    "position": "QB",
+    "teamId": "DAL",
+    "year": 2008,
+    "tables": {
+      "insideRun": [
+        {
+          "min": 3,
+          "max": 8,
+          "result": "gain:-1"
+        },
+        {
+          "min": 9,
+          "max": 12,
+          "result": "gain:2"
+        },
+        {
+          "min": 13,
+          "max": 16,
+          "result": "gain:5"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "gain:10"
+        }
+      ],
+      "outsideRun": [
+        {
+          "min": 3,
+          "max": 7,
+          "result": "gain:-2"
+        },
+        {
+          "min": 8,
+          "max": 11,
+          "result": "gain:1"
+        },
+        {
+          "min": 12,
+          "max": 15,
+          "result": "gain:5"
+        },
+        {
+          "min": 16,
+          "max": 18,
+          "result": "gain:12"
+        }
+      ],
+      "shortPass": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "INT"
+        },
+        {
+          "min": 7,
+          "max": 8,
+          "result": "INC"
+        },
+        {
+          "min": 9,
+          "max": 12,
+          "result": "gain:7"
+        },
+        {
+          "min": 13,
+          "max": 16,
+          "result": "gain:14"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "longPass": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "SACK:-7"
+        },
+        {
+          "min": 7,
+          "max": 10,
+          "result": "INC"
+        },
+        {
+          "min": 11,
+          "max": 14,
+          "result": "gain:20"
+        },
+        {
+          "min": 15,
+          "max": 17,
+          "result": "gain:35"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "qbScramble": [
+        {
+          "min": 3,
+          "max": 10,
+          "result": "gain:1"
+        },
+        {
+          "min": 11,
+          "max": 14,
+          "result": "gain:6"
+        },
+        {
+          "min": 15,
+          "max": 18,
+          "result": "gain:12"
+        }
+      ],
+      "fieldGoal": [
+        {
+          "min": 3,
+          "max": 10,
+          "result": "gain:0"
+        },
+        {
+          "min": 11,
+          "max": 18,
+          "result": "gain:3"
+        }
+      ],
+      "punt": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "gain:36"
+        },
+        {
+          "min": 7,
+          "max": 12,
+          "result": "gain:44"
+        },
+        {
+          "min": 13,
+          "max": 18,
+          "result": "gain:48"
+        }
+      ]
+    }
+  },
+  {
+    "id": "DAL-RB",
+    "name": "DAL RB (2008)",
+    "position": "RB",
+    "teamId": "DAL",
+    "year": 2008,
+    "tables": {
+      "insideRun": [
+        {
+          "min": 3,
+          "max": 5,
+          "result": "gain:-2"
+        },
+        {
+          "min": 6,
+          "max": 9,
+          "result": "gain:1"
+        },
+        {
+          "min": 10,
+          "max": 13,
+          "result": "gain:5"
+        },
+        {
+          "min": 14,
+          "max": 16,
+          "result": "gain:8"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "outsideRun": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "gain:-3"
+        },
+        {
+          "min": 7,
+          "max": 10,
+          "result": "gain:2"
+        },
+        {
+          "min": 11,
+          "max": 13,
+          "result": "gain:6"
+        },
+        {
+          "min": 14,
+          "max": 16,
+          "result": "gain:10"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "shortPass": [
+        {
+          "min": 3,
+          "max": 7,
+          "result": "INC"
+        },
+        {
+          "min": 8,
+          "max": 12,
+          "result": "gain:6"
+        },
+        {
+          "min": 13,
+          "max": 16,
+          "result": "gain:12"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "gain:22"
+        }
+      ],
+      "longPass": [
+        {
+          "min": 3,
+          "max": 10,
+          "result": "INC"
+        },
+        {
+          "min": 11,
+          "max": 14,
+          "result": "gain:17"
+        },
+        {
+          "min": 15,
+          "max": 18,
+          "result": "gain:30"
+        }
+      ],
+      "qbScramble": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ],
+      "fieldGoal": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ],
+      "punt": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ]
+    }
+  }
+]

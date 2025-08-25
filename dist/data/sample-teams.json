@@ -1,0 +1,22 @@
+{
+  "NYG": {
+    "name": "New York Giants",
+    "offense": {
+      "QB": "NYG-QB",
+      "RB": "NYG-RB"
+    },
+    "defense": {
+      "base": "4-3"
+    }
+  },
+  "DAL": {
+    "name": "Dallas Cowboys",
+    "offense": {
+      "QB": "DAL-QB",
+      "RB": "DAL-RB"
+    },
+    "defense": {
+      "base": "3-4"
+    }
+  }
+}

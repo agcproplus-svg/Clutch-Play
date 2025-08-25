@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NFL Strat 2008 (Static)</title>
+<link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <header><h1>NFL Strat-O-Matic 2008</h1></header>
+
+    <section id="setup" class="card">
+      <h2>Select Teams</h2>
+      <div class="teams">
+        <div class="team">
+          <img id="homeLogo" class="logo" alt="home"/>
+          <select id="homeSelect"></select>
+        </div>
+        <div class="team">
+          <img id="awayLogo" class="logo" alt="away"/>
+          <select id="awaySelect"></select>
+        </div>
+      </div>
+      <button id="startBtn" class="primary">Start Game</button>
+    </section>
+
+    <section id="game" class="hidden">
+      <div class="scoreboard card">
+        <div class="teamcol">
+          <img id="hLogo" class="logo small"/>
+          <div id="hAbbr" class="abbr"></div>
+          <div id="hScore" class="score">0</div>
+        </div>
+        <div class="gameinfo">
+          <div id="qtr">Q1</div>
+          <div id="clock">15:00</div>
+          <div id="poss">Poss: home</div>
+          <div id="down">1 & 10</div>
+          <div id="yard">Ball: 25</div>
+        </div>
+        <div class="teamcol">
+          <img id="aLogo" class="logo small"/>
+          <div id="aAbbr" class="abbr"></div>
+          <div id="aScore" class="score">0</div>
+        </div>
+      </div>
+
+      <div class="field card" style="position:relative;">
+        <img src="./assets/field.svg" alt="field"/>
+        <div id="ballMarker" style="position:absolute;left:2%;top:50%;transform:translateY(-50%);width:14px;height:14px;border-radius:50%;background:#ffcc00;border:2px solid #222;box-shadow:0 0 6px rgba(0,0,0,.35)"></div>
+      </div>
+
+      <div class="panels">
+        <div class="card">
+          <h3>Offense Players</h3>
+          <div>QB: <span id="qbName"></span></div>
+          <div>RB: <span id="rbName"></span></div>
+        </div>
+        <div class="card">
+          <h3>Play Calls</h3>
+          <div class="btns">
+            <button data-play="insideRun"><img src="./assets/ui/btn-run.svg" alt="run"/></button>
+            <button data-play="outsideRun"><img src="./assets/ui/btn-sweep.svg" alt="sweep"/></button>
+            <button data-play="shortPass"><img src="./assets/ui/btn-pass.svg" alt="pass"/></button>
+            <button data-play="longPass"><img src="./assets/ui/btn-bomb.svg" alt="bomb"/></button>
+            <button data-play="punt"><img src="./assets/ui/btn-punt.svg" alt="punt"/></button>
+            <button data-play="fieldGoal"><img src="./assets/ui/btn-fg.svg" alt="fg"/></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Extra Point</h3>
+        <div style="display:flex; gap:8px; margin-bottom:8px;">
+          <button id="kickPat" class="primary" disabled>KICK PAT</button>
+          <button id="goForTwo" class="primary" disabled>2-POINT TRY</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Play Log</h3>
+        <div id="log" class="log"></div>
+      </div>
+    </section>
+  </div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

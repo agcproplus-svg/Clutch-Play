@@ -1,0 +1,13 @@
+{
+  "name": "nfl-strat-2008",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=@nfl/strat-app run dev",
+    "build": "npm --workspace=@nfl/strat-app run build",
+    "preview": "npm --workspace=@nfl/strat-app run preview",
+    "typecheck": "npm --workspace=@nfl/strat-engine run build && npm --workspace=@nfl/strat-app run typecheck"
+  }
+}
