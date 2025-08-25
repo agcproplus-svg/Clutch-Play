@@ -1,1 +1,1 @@
-{"Patriots": {"QB": "Tom Brady"}}
+{"Patriots": {"QB": {"name": "Tom Brady", "rating": 95}, "RB": {"name": "Kevin Faulk", "rating": 82}, "WR1": {"name": "Randy Moss", "rating": 97}, "WR2": {"name": "Wes Welker", "rating": 93}, "TE": {"name": "Benjamin Watson", "rating": 80}}, "Giants": {"QB": {"name": "Eli Manning", "rating": 90}, "RB": {"name": "Brandon Jacobs", "rating": 89}, "WR1": {"name": "Plaxico Burress", "rating": 91}, "WR2": {"name": "Amani Toomer", "rating": 85}, "TE": {"name": "Kevin Boss", "rating": 78}}}
