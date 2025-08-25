@@ -1,0 +1,29 @@
+
+:root { --bg:#0a0f14; --panel:#0f1620; --card:#111a26; --accent:#1e90ff; --line:#243241; --text:#e8f0ff; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
+h1,h2,h3,h4{margin:0 0 8px}
+.container{max-width:1200px;margin:0 auto;padding:16px}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.team-box{display:flex;align-items:center;gap:10px}
+.team-box img{width:40px;height:40px}
+.score{font-size:28px;font-weight:800}
+.main{display:grid;grid-template-columns: 1.2fr 1fr 1fr; gap:12px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px}
+.field{position:relative;height:420px;background:linear-gradient(#0e7a2a,#0b5e21);border-radius:12px;overflow:hidden}
+.hash{position:absolute;left:2px;right:2px;height:2px;background:rgba(255,255,255,.15)}
+.hash:nth-child(5n){background:rgba(255,255,255,.35);height:3px}
+.ball{position:absolute;top:200px;width:14px;height:14px;border-radius:50%;background:#ffd86b;border:2px solid #5a3b00;transform:translateX(-50%)}
+.play-group{display:flex;flex-wrap:wrap;gap:8px}
+.play-group button{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px;cursor:pointer;transition:.15s transform}
+.play-group button:hover{transform:translateY(-2px)}
+.play-group img{width:120px}
+.selects{display:flex;gap:12px;margin:12px 0}
+.selects select{padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--text)}
+.start-btn{padding:12px 18px;border-radius:10px;border:1px solid var(--line);background:var(--accent);color:white;font-weight:700;cursor:pointer}
+.log{max-height:380px;overflow:auto;display:flex;flex-direction:column;gap:6px;font-size:14px}
+.badge{padding:2px 8px;border-radius:999px;background:#16314d;border:1px solid #285781;font-size:12px}
+.row{display:flex;align-items:center;justify-content:space-between;margin:8px 0}
+.hidden{display:none}
+.small{font-size:12px;opacity:.8}
+hr{border:none;border-top:1px solid var(--line);margin:8px 0}

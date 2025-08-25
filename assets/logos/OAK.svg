@@ -6,5 +6,5 @@
     </radialGradient>
   </defs>
   <circle cx="50" cy="50" r="48" fill="url(#g)" stroke="#000" stroke-width="2"/>
-  <text x="50" y="58" font-size="36" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle" fill="#fff">ARI</text>
+  <text x="50" y="58" font-size="36" font-family="Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle" fill="#fff">OAK</text>
 </svg>
