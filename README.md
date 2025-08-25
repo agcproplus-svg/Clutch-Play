@@ -20,3 +20,9 @@ npm run build   # if you want to regenerate dist/
 - Team dropdown loads all 32 teams from `data/2008/team-meta.json`.
 - Player cards are resolved via `data/2008/sample-teams.json` → IDs mapped to `data/2008/sample-cards.json`.
 - Field graphic is `assets/field.svg`. Replace with your own if desired.
+
+
+## 🔐 Admin Login (in-browser, not secure)
+- **User:** `JNWILLIS`
+- **Password:** `Duke2010!`
+Use the **Admin** button in the header to open the editor. Changes are stored in your browser `localStorage` and can be **Exported** as `sample-cards.json` to commit back into `/dist/data/` (and your source). For real auth, use a backend — this is purely static/demo.

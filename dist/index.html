@@ -8,6 +8,10 @@
 </head>
 <body>
   <div class="container">
+    <div class="header">
+      <div class="brand"><div class="dot"></div><h1>NFL Strat‑O‑Matic 2008</h1></div>
+      <div class="actions"><button id="adminBtn">Admin</button></div>
+    </div>
     <header><h1>NFL Strat-O-Matic 2008</h1></header>
 
     <section id="setup" class="card">
@@ -84,5 +88,62 @@
     </section>
   </div>
 <script type="module" src="./app.js"></script>
+
+  <div id="cardModal" class="modal">
+    <div class="box">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h2>Player Card</h2>
+        <button id="closeCard" class="primary">Close</button>
+      </div>
+      <div style="margin:8px 0;">
+        <span id="cardPlayerName" class="badge"></span>
+        <select id="cardPlayType" class="select" style="margin-left:8px;">
+          <option value="insideRun">Inside Run</option>
+          <option value="outsideRun">Outside Run</option>
+          <option value="shortPass">Short Pass</option>
+          <option value="longPass">Long Pass</option>
+          <option value="punt">Punt</option>
+          <option value="fieldGoal">Field Goal</option>
+        </select>
+      </div>
+      <table class="table" id="cardGrid"></table>
+    </div>
+  </div>
+
+  <div id="adminModal" class="modal">
+    <div class="box">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h2>Admin</h2>
+        <button id="closeAdmin" class="primary">Close</button>
+      </div>
+      <div id="adminLogin" class="grid cols-2" style="margin-top:8px;">
+        <input id="adminUser" class="input" placeholder="Username"/>
+        <input id="adminPass" class="input" placeholder="Password" type="password"/>
+        <button id="adminLoginBtn" class="primary">Login</button>
+      </div>
+      <div id="adminPanel" style="display:none;margin-top:12px;">
+        <div class="grid cols-3">
+          <div>
+            <label>Player</label>
+            <select id="adminPlayer" class="select"></select>
+          </div>
+          <div>
+            <label>Rename</label>
+            <input id="adminPlayerName" class="input" />
+          </div>
+          <div style="display:flex;gap:8px;align-items:flex-end;">
+            <button id="adminSave" class="primary">Save</button>
+            <button id="adminExport" class="primary">Export JSON</button>
+          </div>
+        </div>
+        <hr/>
+        <div>
+          <label>Tables JSON (edit)</label>
+          <textarea id="adminTables" rows="14" style="width:100%;"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

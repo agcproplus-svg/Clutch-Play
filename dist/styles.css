@@ -20,3 +20,29 @@ h1{margin:8px 0 16px}
 .log{max-height:260px;overflow:auto;display:flex;flex-direction:column-reverse;border:1px dashed #ddd;padding:8px;border-radius:8px}
 
 .ball{width:14px;height:14px;border-radius:50%;background:#ffcc00;border:2px solid #222}
+
+:root{
+  --bg:#0b1220;--card:#0e172a;--muted:#1f2a44;--acc:#14b8a6;--text:#e5e7eb;--sub:#9ca3af;
+}
+body{background:linear-gradient(180deg,#0b1220 0%,#0b1220 50%,#101826 100%);color:var(--text);}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.06)}
+.primary{background:var(--acc);color:#052c2b}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .dot{width:12px;height:12px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc)}
+.brand h1{margin:0}
+.header .actions button{background:#111827;color:var(--text);border:1px solid #1f2937;border-radius:10px;padding:8px 12px}
+.logo{background:#111827;border:1px solid #1f2937}
+.score{color:#f59e0b}
+.play-log{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;padding:20px;z-index:30}
+.modal .box{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:14px;max-width:900px;width:100%;max-height:85vh;overflow:auto;padding:16px}
+.modal.show{display:flex}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border:1px solid #22304b;padding:6px;text-align:center}
+.badge{display:inline-block;padding:2px 6px;border-radius:8px;background:#0b3b35;color:#6ee7d2;border:1px solid #134e4a;font-size:12px}
+.input,.select,textarea{background:#0b1220;border:1px solid #1f2937;color:var(--text);border-radius:8px;padding:8px}
+.grid{display:grid;gap:8px}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+hr{border-color:#1f2937;margin:12px 0}
