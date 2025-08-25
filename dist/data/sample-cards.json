@@ -575,5 +575,286 @@
         }
       ]
     }
+  },
+  {
+    "id": "GEN-QB",
+    "name": "Generic QB",
+    "position": "QB",
+    "teamId": "GEN",
+    "year": 2008,
+    "tables": {
+      "insideRun": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "gain:-2"
+        },
+        {
+          "min": 7,
+          "max": 11,
+          "result": "gain:0"
+        },
+        {
+          "min": 12,
+          "max": 15,
+          "result": "gain:4"
+        },
+        {
+          "min": 16,
+          "max": 17,
+          "result": "gain:8"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "outsideRun": [
+        {
+          "min": 3,
+          "max": 7,
+          "result": "gain:-2"
+        },
+        {
+          "min": 8,
+          "max": 11,
+          "result": "gain:1"
+        },
+        {
+          "min": 12,
+          "max": 15,
+          "result": "gain:5"
+        },
+        {
+          "min": 16,
+          "max": 17,
+          "result": "gain:9"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "shortPass": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "INT"
+        },
+        {
+          "min": 7,
+          "max": 9,
+          "result": "INC"
+        },
+        {
+          "min": 10,
+          "max": 13,
+          "result": "gain:6"
+        },
+        {
+          "min": 14,
+          "max": 17,
+          "result": "gain:12"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "longPass": [
+        {
+          "min": 3,
+          "max": 7,
+          "result": "SACK:-7"
+        },
+        {
+          "min": 8,
+          "max": 11,
+          "result": "INC"
+        },
+        {
+          "min": 12,
+          "max": 15,
+          "result": "gain:18"
+        },
+        {
+          "min": 16,
+          "max": 17,
+          "result": "gain:32"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "qbScramble": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ],
+      "fieldGoal": [
+        {
+          "min": 3,
+          "max": 10,
+          "result": "gain:0"
+        },
+        {
+          "min": 11,
+          "max": 18,
+          "result": "gain:3"
+        }
+      ],
+      "punt": [
+        {
+          "min": 3,
+          "max": 6,
+          "result": "gain:35"
+        },
+        {
+          "min": 7,
+          "max": 12,
+          "result": "gain:42"
+        },
+        {
+          "min": 13,
+          "max": 18,
+          "result": "gain:50"
+        }
+      ]
+    }
+  },
+  {
+    "id": "GEN-RB",
+    "name": "Generic RB",
+    "position": "RB",
+    "teamId": "GEN",
+    "year": 2008,
+    "tables": {
+      "insideRun": [
+        {
+          "min": 3,
+          "max": 5,
+          "result": "gain:-1"
+        },
+        {
+          "min": 6,
+          "max": 9,
+          "result": "gain:2"
+        },
+        {
+          "min": 10,
+          "max": 13,
+          "result": "gain:4"
+        },
+        {
+          "min": 14,
+          "max": 16,
+          "result": "gain:7"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "outsideRun": [
+        {
+          "min": 3,
+          "max": 5,
+          "result": "gain:-2"
+        },
+        {
+          "min": 6,
+          "max": 9,
+          "result": "gain:1"
+        },
+        {
+          "min": 10,
+          "max": 13,
+          "result": "gain:6"
+        },
+        {
+          "min": 14,
+          "max": 16,
+          "result": "gain:9"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "shortPass": [
+        {
+          "min": 3,
+          "max": 7,
+          "result": "INC"
+        },
+        {
+          "min": 8,
+          "max": 12,
+          "result": "gain:5"
+        },
+        {
+          "min": 13,
+          "max": 16,
+          "result": "gain:11"
+        },
+        {
+          "min": 17,
+          "max": 18,
+          "result": "gain:25"
+        }
+      ],
+      "longPass": [
+        {
+          "min": 3,
+          "max": 10,
+          "result": "INC"
+        },
+        {
+          "min": 11,
+          "max": 14,
+          "result": "gain:15"
+        },
+        {
+          "min": 15,
+          "max": 17,
+          "result": "gain:28"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "result": "TD"
+        }
+      ],
+      "qbScramble": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ],
+      "fieldGoal": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ],
+      "punt": [
+        {
+          "min": 3,
+          "max": 18,
+          "result": "gain:0"
+        }
+      ]
+    }
   }
 ]

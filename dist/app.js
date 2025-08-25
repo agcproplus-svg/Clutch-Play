@@ -20,6 +20,28 @@ if(saved){
 
 const cardById = Object.fromEntries(cards.map(c=>[c.id,c]));
 
+// --- BEGIN FALLBACK HELPERS ---
+function makeFallbackCard(teamId, pos){
+  // Try to find a team-specific card with prefix TEAM-pos. If none, use generic.
+  const idCandidates = [`${teamId}-`+pos, `${teamId.toUpperCase()}-`+pos, `${teamId}-${pos.toUpperCase()}`, `${teamId.toUpperCase()}-${pos.toUpperCase()}`];
+  for(const id of idCandidates){
+    if(cardById[id]) return cardById[id];
+  }
+  // else return generic
+  return cardById[pos==='QB' ? 'GEN-QB' : 'GEN-RB'];
+}
+function getCardForOffense(offenseObj, playType){
+  if(!offenseObj) return null;
+  const isPass = (playType==='shortPass' || playType==='longPass');
+  if(isPass){
+    return offenseObj.QB || makeFallbackCard(offenseObj.id, 'QB');
+  }else{
+    return offenseObj.RB || makeFallbackCard(offenseObj.id, 'RB');
+  }
+}
+// --- END FALLBACK HELPERS ---
+
+
 // UI elements
 const homeSel = document.getElementById('homeSelect');
 const awaySel = document.getElementById('awaySelect');
@@ -308,16 +330,35 @@ startBtn.addEventListener('click', ()=>{
   // Map players
   const hQB=state.home.roster?.offense?.QB, hRB=state.home.roster?.offense?.RB;
   const aQB=state.away.roster?.offense?.QB, aRB=state.away.roster?.offense?.RB;
-  state.home.QB = hQB? cardById[hQB]: null;
-  state.home.RB = hRB? cardById[hRB]: null;
-  state.away.QB = aQB? cardById[aQB]: null;
-  state.away.RB = aRB? cardById[aRB]: null;
+  state.home.QB = hQB? (cardById[hQB]||makeFallbackCard(h,'QB')) : makeFallbackCard(h,'QB');
+  state.home.RB = hRB? (cardById[hRB]||makeFallbackCard(h,'RB')) : makeFallbackCard(h,'RB');
+  state.away.QB = aQB? (cardById[aQB]||makeFallbackCard(a,'QB')) : makeFallbackCard(a,'QB');
+  state.away.RB = aRB? (cardById[aRB]||makeFallbackCard(a,'RB')) : makeFallbackCard(a,'RB');
   qbName.textContent = (state.home.QB?.name || '—') + ' / ' + (state.away.QB?.name || '—');
   rbName.textContent = (state.home.RB?.name || '—') + ' / ' + (state.away.RB?.name || '—');
   setup.classList.add('hidden'); game.classList.remove('hidden');
   render();
 });
 
+
+// Attach hover handlers to show card on hover
+try{
+  [qbName, rbName].forEach(el=>{
+    el.style.textDecoration='underline'; el.style.cursor='pointer';
+    el.addEventListener('mouseenter', (ev)=>{
+      const isQB = el===qbName;
+      const offense = state.possession==='home'?state.home:state.away;
+      const card = isQB ? (offense.QB||makeFallbackCard(offense.id,'QB')) : (offense.RB||makeFallbackCard(offense.id,'RB'));
+      if(!card) return;
+      openCardModal(card);
+      const rect = el.getBoundingClientRect(); const modal = document.getElementById('cardModal');
+      modal.style.top = (rect.top + window.scrollY + 10) + 'px';
+      modal.style.left = (rect.left + window.scrollX + (isQB?50:-350)) + 'px';
+      modal.classList.add('show');
+    });
+    el.addEventListener('mouseleave', ()=>{ const modal = document.getElementById('cardModal'); if(modal) modal.classList.remove('show'); });
+  });
+}catch(e){ console.warn('Hover attach failed', e); }
 // Admin modal
 adminBtn.addEventListener('click', ()=> adminModal.classList.add('show'));
 closeAdmin.addEventListener('click', ()=> adminModal.classList.remove('show'));
