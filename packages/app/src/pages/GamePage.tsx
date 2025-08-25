@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import meta from '../../../data/2008/team-meta.json';
-import rosters from '../../../data/2008/sample-teams.json';
-import cards from '../../../data/2008/sample-cards.json';
+import sampleTeams from '../../../data/2008/sample-teams.json';
+import sampleCards from '../../../data/2008/sample-cards.json';
 import { startGame, GameState, applyPlay } from '@nfl/strat-engine';
+import { DefenseCall } from '@nfl/strat-engine';
 import { PlayerCard } from '@nfl/strat-engine';
-
-const cardById: Record<string, PlayerCard> = Object.fromEntries((cards as PlayerCard[]).map(c=>[c.id, c]));
 
 function formatTime(s:number){
   const mm = Math.floor(s/60).toString().padStart(2,'0');
@@ -15,31 +14,35 @@ function formatTime(s:number){
 
 export default function GamePage({ home, away, onExit }:{ home:string, away:string, onExit:()=>void }){
   const [state, setState] = useState<GameState>(()=> startGame(home,away));
+  const [logTick, setLogTick] = useState(0);
 
-  useEffect(()=> setState(startGame(home,away)), [home,away]);
+  useEffect(()=> {
+    // reset if teams change
+    setState(startGame(home,away));
+  }, [home,away]);
 
   const homeMeta = meta.find(m=>m.id===home)!;
   const awayMeta = meta.find(m=>m.id===away)!;
 
-  const homeRoster = (rosters as any)[home] || {};
-  const awayRoster = (rosters as any)[away] || {};
+  // simple helpers to get cards for offense depending on possession
+  function getCardFor(teamId:string, pos:'QB'|'RB') {
+    return sampleCards.find(c=>c.teamId===teamId && c.position===pos) as PlayerCard;
+  }
 
-  const homeQB = cardById[homeRoster?.offense?.QB] as PlayerCard | undefined;
-  const homeRB = cardById[homeRoster?.offense?.RB] as PlayerCard | undefined;
-  const awayQB = cardById[awayRoster?.offense?.QB] as PlayerCard | undefined;
-  const awayRB = cardById[awayRoster?.offense?.RB] as PlayerCard | undefined;
+  function pickOffenseCard(): PlayerCard {
+    return state.possession === 'home' ? getCardFor(home,'RB') : getCardFor(away,'RB');
+  }
+  function pickQBCard(): PlayerCard {
+    return state.possession === 'home' ? getCardFor(home,'QB') : getCardFor(away,'QB');
+  }
 
-  function play(type:'insideRun'|'outsideRun'|'shortPass'|'longPass'|'punt'|'fieldGoal'){
-    const card = (state.possession==='home')
-      ? ((type==='shortPass'||type==='longPass') ? homeQB : homeRB)
-      : ((type==='shortPass'||type==='longPass') ? awayQB : awayRB);
-    if(!card){
-      state.playLog.unshift('No player card for this play type.');
-      setState({...state});
-      return;
-    }
-    applyPlay(state, card as any, type as any, {box:'base', blitz:false, coverage:'zone'} as any);
+  function runPlay(type:'insideRun'|'outsideRun'|'shortPass'|'longPass'|'punt'|'fieldGoal'){
+    const offenseCard = (type==='shortPass' || type==='longPass') ? pickQBCard() : pickOffenseCard();
+    const defense: DefenseCall = { box: 'base', blitz: Math.random()<0.2, coverage: 'zone' };
+    const res = applyPlay(state, offenseCard, (type as any), defense);
+    // force react update by cloning
     setState({...state});
+    setLogTick(t=>t+1);
   }
 
   return (
@@ -70,23 +73,19 @@ export default function GamePage({ home, away, onExit }:{ home:string, away:stri
 
       <div className="main-grid">
         <div className="field-panel">
-          <img src="/assets/field.svg" alt="field" style={{width:'100%', borderRadius:12}}/>
+          <div className="field-visual">
+            <div className="yardline">Ball on: {state.yardLine}</div>
+          </div>
         </div>
         <div className="controls-panel">
           <h3>Play Calls</h3>
           <div className="buttons-grid">
-            <button onClick={()=>play('insideRun')}><img src="/assets/ui/btn-run.svg" alt="run" width={140}/></button>
-            <button onClick={()=>play('outsideRun')}><img src="/assets/ui/btn-sweep.svg" alt="sweep" width={140}/></button>
-            <button onClick={()=>play('shortPass')}><img src="/assets/ui/btn-pass.svg" alt="pass" width={140}/></button>
-            <button onClick={()=>play('longPass')}><img src="/assets/ui/btn-bomb.svg" alt="bomb" width={140}/></button>
-            <button onClick={()=>play('punt')}><img src="/assets/ui/btn-punt.svg" alt="punt" width={140}/></button>
-            <button onClick={()=>play('fieldGoal')}><img src="/assets/ui/btn-fg.svg" alt="fg" width={140}/></button>
-          </div>
-          <div style={{marginTop:8, fontSize:12}}>
-            <div><strong>Home QB:</strong> {homeQB?.name || '—'}</div>
-            <div><strong>Home RB:</strong> {homeRB?.name || '—'}</div>
-            <div><strong>Away QB:</strong> {awayQB?.name || '—'}</div>
-            <div><strong>Away RB:</strong> {awayRB?.name || '—'}</div>
+            <button onClick={()=>runPlay('insideRun')}><img src="/assets/ui/btn-run.svg" alt="run" width={140}/></button>
+            <button onClick={()=>runPlay('outsideRun')}><img src="/assets/ui/btn-sweep.svg" alt="sweep" width={140}/></button>
+            <button onClick={()=>runPlay('shortPass')}><img src="/assets/ui/btn-pass.svg" alt="pass" width={140}/></button>
+            <button onClick={()=>runPlay('longPass')}><img src="/assets/ui/btn-bomb.svg" alt="bomb" width={140}/></button>
+            <button onClick={()=>runPlay('punt')}><img src="/assets/ui/btn-punt.svg" alt="punt" width={140}/></button>
+            <button onClick={()=>runPlay('fieldGoal')}><img src="/assets/ui/btn-fg.svg" alt="fg" width={140}/></button>
           </div>
         </div>
       </div>

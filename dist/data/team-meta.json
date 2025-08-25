@@ -4,223 +4,223 @@
     "abbr": "ARI",
     "name": "Arizona Cardinals",
     "year": 2008,
-    "logo": "./assets/logos/ARI.svg"
+    "logo": "/assets/logos/ARI.svg"
   },
   {
     "id": "ATL",
     "abbr": "ATL",
     "name": "Atlanta Falcons",
     "year": 2008,
-    "logo": "./assets/logos/ATL.svg"
+    "logo": "/assets/logos/ATL.svg"
   },
   {
     "id": "BAL",
     "abbr": "BAL",
     "name": "Baltimore Ravens",
     "year": 2008,
-    "logo": "./assets/logos/BAL.svg"
+    "logo": "/assets/logos/BAL.svg"
   },
   {
     "id": "BUF",
     "abbr": "BUF",
     "name": "Buffalo Bills",
     "year": 2008,
-    "logo": "./assets/logos/BUF.svg"
+    "logo": "/assets/logos/BUF.svg"
   },
   {
     "id": "CAR",
     "abbr": "CAR",
     "name": "Carolina Panthers",
     "year": 2008,
-    "logo": "./assets/logos/CAR.svg"
+    "logo": "/assets/logos/CAR.svg"
   },
   {
     "id": "CHI",
     "abbr": "CHI",
     "name": "Chicago Bears",
     "year": 2008,
-    "logo": "./assets/logos/CHI.svg"
+    "logo": "/assets/logos/CHI.svg"
   },
   {
     "id": "CIN",
     "abbr": "CIN",
     "name": "Cincinnati Bengals",
     "year": 2008,
-    "logo": "./assets/logos/CIN.svg"
+    "logo": "/assets/logos/CIN.svg"
   },
   {
     "id": "CLE",
     "abbr": "CLE",
     "name": "Cleveland Browns",
     "year": 2008,
-    "logo": "./assets/logos/CLE.svg"
+    "logo": "/assets/logos/CLE.svg"
   },
   {
     "id": "DAL",
     "abbr": "DAL",
     "name": "Dallas Cowboys",
     "year": 2008,
-    "logo": "./assets/logos/DAL.svg"
+    "logo": "/assets/logos/DAL.svg"
   },
   {
     "id": "DEN",
     "abbr": "DEN",
     "name": "Denver Broncos",
     "year": 2008,
-    "logo": "./assets/logos/DEN.svg"
+    "logo": "/assets/logos/DEN.svg"
   },
   {
     "id": "DET",
     "abbr": "DET",
     "name": "Detroit Lions",
     "year": 2008,
-    "logo": "./assets/logos/DET.svg"
+    "logo": "/assets/logos/DET.svg"
   },
   {
     "id": "GB",
     "abbr": "GB",
     "name": "Green Bay Packers",
     "year": 2008,
-    "logo": "./assets/logos/GB.svg"
+    "logo": "/assets/logos/GB.svg"
   },
   {
     "id": "HOU",
     "abbr": "HOU",
     "name": "Houston Texans",
     "year": 2008,
-    "logo": "./assets/logos/HOU.svg"
+    "logo": "/assets/logos/HOU.svg"
   },
   {
     "id": "IND",
     "abbr": "IND",
     "name": "Indianapolis Colts",
     "year": 2008,
-    "logo": "./assets/logos/IND.svg"
+    "logo": "/assets/logos/IND.svg"
   },
   {
     "id": "JAX",
     "abbr": "JAX",
     "name": "Jacksonville Jaguars",
     "year": 2008,
-    "logo": "./assets/logos/JAX.svg"
+    "logo": "/assets/logos/JAX.svg"
   },
   {
     "id": "KC",
     "abbr": "KC",
     "name": "Kansas City Chiefs",
     "year": 2008,
-    "logo": "./assets/logos/KC.svg"
+    "logo": "/assets/logos/KC.svg"
   },
   {
     "id": "MIA",
     "abbr": "MIA",
     "name": "Miami Dolphins",
     "year": 2008,
-    "logo": "./assets/logos/MIA.svg"
+    "logo": "/assets/logos/MIA.svg"
   },
   {
     "id": "MIN",
     "abbr": "MIN",
     "name": "Minnesota Vikings",
     "year": 2008,
-    "logo": "./assets/logos/MIN.svg"
+    "logo": "/assets/logos/MIN.svg"
   },
   {
     "id": "NE",
     "abbr": "NE",
     "name": "New England Patriots",
     "year": 2008,
-    "logo": "./assets/logos/NE.svg"
+    "logo": "/assets/logos/NE.svg"
   },
   {
     "id": "NO",
     "abbr": "NO",
     "name": "New Orleans Saints",
     "year": 2008,
-    "logo": "./assets/logos/NO.svg"
+    "logo": "/assets/logos/NO.svg"
   },
   {
     "id": "NYG",
     "abbr": "NYG",
     "name": "New York Giants",
     "year": 2008,
-    "logo": "./assets/logos/NYG.svg"
+    "logo": "/assets/logos/NYG.svg"
   },
   {
     "id": "NYJ",
     "abbr": "NYJ",
     "name": "New York Jets",
     "year": 2008,
-    "logo": "./assets/logos/NYJ.svg"
+    "logo": "/assets/logos/NYJ.svg"
   },
   {
     "id": "OAK",
     "abbr": "OAK",
     "name": "Oakland Raiders",
     "year": 2008,
-    "logo": "./assets/logos/OAK.svg"
+    "logo": "/assets/logos/OAK.svg"
   },
   {
     "id": "PHI",
     "abbr": "PHI",
     "name": "Philadelphia Eagles",
     "year": 2008,
-    "logo": "./assets/logos/PHI.svg"
+    "logo": "/assets/logos/PHI.svg"
   },
   {
     "id": "PIT",
     "abbr": "PIT",
     "name": "Pittsburgh Steelers",
     "year": 2008,
-    "logo": "./assets/logos/PIT.svg"
+    "logo": "/assets/logos/PIT.svg"
   },
   {
     "id": "SD",
     "abbr": "SD",
     "name": "San Diego Chargers",
     "year": 2008,
-    "logo": "./assets/logos/SD.svg"
+    "logo": "/assets/logos/SD.svg"
   },
   {
     "id": "SEA",
     "abbr": "SEA",
     "name": "Seattle Seahawks",
     "year": 2008,
-    "logo": "./assets/logos/SEA.svg"
+    "logo": "/assets/logos/SEA.svg"
   },
   {
     "id": "SF",
     "abbr": "SF",
     "name": "San Francisco 49ers",
     "year": 2008,
-    "logo": "./assets/logos/SF.svg"
+    "logo": "/assets/logos/SF.svg"
   },
   {
     "id": "STL",
     "abbr": "STL",
     "name": "St. Louis Rams",
     "year": 2008,
-    "logo": "./assets/logos/STL.svg"
+    "logo": "/assets/logos/STL.svg"
   },
   {
     "id": "TB",
     "abbr": "TB",
     "name": "Tampa Bay Buccaneers",
     "year": 2008,
-    "logo": "./assets/logos/TB.svg"
+    "logo": "/assets/logos/TB.svg"
   },
   {
     "id": "TEN",
     "abbr": "TEN",
     "name": "Tennessee Titans",
     "year": 2008,
-    "logo": "./assets/logos/TEN.svg"
+    "logo": "/assets/logos/TEN.svg"
   },
   {
     "id": "WAS",
     "abbr": "WAS",
     "name": "Washington Redskins",
     "year": 2008,
-    "logo": "./assets/logos/WAS.svg"
+    "logo": "/assets/logos/WAS.svg"
   }
 ]
