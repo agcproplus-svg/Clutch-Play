@@ -1,69 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Clutch Play — 2008</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <title>Gridiron Cards 2008</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <div class="container">
-    <div id="setup" class="panel">
-      <h2>Start Game</h2>
-      <div class="selects">
-        <div><div class="small">USER Team</div><select id="userTeam"></select></div>
-        <div><div class="small">CPU Team</div><select id="cpuTeam"></select></div>
-        <button id="startBtn" class="start-btn">Start</button>
-      </div>
-      <div class="small">Tip: If logos don’t show on GitHub Pages, make sure your repo is using the <b>root</b> branch and these paths are relative (they are).</div>
-    </div>
-
-    <div id="game" class="hidden">
-      <div class="topbar">
-        <div class="team-box"><img id="homeLogo" alt="home"><div><div id="homeName">Home</div><div class="small badge" id="homeAbbr"></div></div></div>
-        <div class="score"><span id="homeScore">0</span> – <span id="awayScore">0</span></div>
-        <div class="team-box"><img id="awayLogo" alt="away"><div><div id="awayName">Away</div><div class="small badge" id="awayAbbr"></div></div></div>
-      </div>
-
-      <div class="main">
-        <div class="panel">
-          <div class="row"><div><b>Field</b> · <span class="small" id="downDist">1st & 10 @ 25</span></div><div class="badge" id="posBadge">USER ball</div></div>
-          <div class="field" id="field">
-            <!-- 100 yard hashes -->
-            <div class="hash" style="top:10px"></div>
-            <div class="hash" style="top:50px"></div>
-            <div class="hash" style="top:90px"></div>
-            <div class="hash" style="top:130px"></div>
-            <div class="hash" style="top:170px"></div>
-            <div class="hash" style="top:210px"></div>
-            <div class="hash" style="top:250px"></div>
-            <div class="hash" style="top:290px"></div>
-            <div class="hash" style="top:330px"></div>
-            <div class="hash" style="top:370px"></div>
-            <div id="ball" class="ball" style="left:25%"></div>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="row"><b id="playsTitle">Your Offense</b><div class="small" id="quarterClock">1Q 15:00</div></div>
-          <div id="offense" class="play-group"></div>
-          <div id="defense" class="play-group hidden"></div>
-          <hr/>
-          <div class="row"><b>Special Teams</b></div>
-          <div id="special" class="play-group">
-            <button data-play="punt"><img src="assets/ui/btn-punt.svg" alt="punt"></button>
-            <button data-play="fieldGoal"><img src="assets/ui/btn-fg.svg" alt="fg"></button>
-          </div>
-        </div>
-
-        <div class="panel">
-          <div class="row"><b>Play Log</b><button id="adminBtn" class="badge">Admin</button></div>
-          <div id="log" class="log"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <div id="app"></div>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
